@@ -19,7 +19,7 @@ class Message {
 
 // YOU - current user
 final User currentUser =
-    User(id: 0, name: 'Current User', imageUrl: 'assets/images/greg.jpg');
+    User(id: 0, name: 'Mahmoud Bebars', imageUrl: 'assets/images/mbebars.jpg');
 
 // USERS
 final User greg = User(id: 1, name: 'Greg', imageUrl: 'assets/images/greg.jpg');

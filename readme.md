@@ -14,12 +14,12 @@
 
 - Facebook App
 
-![Facebbok](./shots/facebook.png 'Facebook Home Page')
+![Facebbok](/shots/facebook.png 'Facebook Home Page')
 
 - Clubhouse App
 
-![ClubHouse](./shots/clubhouse.png 'Clubhouse Home Page')
+![ClubHouse](/shots/clubhouse.png 'Clubhouse Home Page')
 
 - Chat UI App
 
-![ChatUI](./shots/chatui.png 'ChatUI chatting Page')
+![ChatUI](/shots/chatui.png 'ChatUI chatting Page')
