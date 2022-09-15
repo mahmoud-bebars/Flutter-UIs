@@ -10,17 +10,19 @@
 
 4. Youtube Clone UI
 
-5. Netfilx Clone UI (building...)
+5. Coinbase App (built with Crypto coins API)
+
+6. Netfilx Clone UI (building...)
 
 ## Apps UI shots
 
 - Facebook App
 
-![Facebbok](/shots/facebook.png 'Facebook Home Page')
+![Facebbok](/shots/Facebook.png 'Facebook Home Page')
 
 - Clubhouse App
 
-![ClubHouse](/shots/clubhouse.png 'Clubhouse Home Page')
+![ClubHouse](/shots/ClubHouse.png 'Clubhouse Home Page')
 
 - Chat UI App
 
@@ -29,3 +31,7 @@
 - Youtube App
 
 ![ChatUI](/shots/youtube.png 'Youtube Home Page')
+
+- Coinbase App
+
+![ChatUI](/shots/coinbase.png 'Coinbase Home Page')
