@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
           primary: Colors.white,
-          secondary: Colors.grey,
+          secondary: Colors.white,
         ),
       ),
       home: HomePage(_currencies),
@@ -29,15 +29,20 @@ class MyApp extends StatelessWidget {
 }
 
 getCurrencies() async {
-  var url = Uri.https(
-      "pro-api.coinmarketcap.com",
-      "/v1/cryptocurrency/listings/latest",
-      {'start': '1', 'limit': '5000', 'convert': 'USD'});
+  var url = Uri.https("api.coingecko.com", "/api/v3/coins/markets", {
+    'vs_currency': 'usd',
+    'order': 'order=market_cap_desc',
+    'per_page': '20',
+    'page': '1',
+    'price_change_percentage': '1d'
+  });
   var response = await http.get(url, headers: {
-    'X-CMC_PRO_API_KEY': '28aa3727-f27e-431d-8446-725e2b0e44c1',
+    // 'X-CMC_PRO_API_KEY': '28aa3727-f27e-431d-8446-725e2b0e44c1',
     "Accept": "application/json",
   });
-  var jsonResponse =
-      convert.jsonDecode(response.body) as Map<String, dynamic>; // expected bug
-  return jsonResponse["data"];
+  var jsonResponse = convert.jsonDecode(response.body); // expected bug
+  return jsonResponse;
 }
+
+
+/* https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=true&price_change_percentage=7d */
