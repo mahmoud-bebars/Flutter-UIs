@@ -1,17 +1,15 @@
-import 'package:coinbase_app/screens/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert' as convert;
+import 'package:coinbase_app/screens/home_page.dart';
+import 'package:coinbase_app/services/api_service.dart';
 
 void main() async {
-  final List currencies = await getCurrencies();
-  print(currencies.length);
+  final List currencies = await getApiData();
   runApp(MyApp(currencies));
 }
 
 class MyApp extends StatelessWidget {
   final List _currencies;
-  const MyApp(this._currencies);
+  const MyApp(this._currencies, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,22 +25,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-getCurrencies() async {
-  var url = Uri.https("api.coingecko.com", "/api/v3/coins/markets", {
-    'vs_currency': 'usd',
-    'order': 'order=market_cap_desc',
-    'per_page': '20',
-    'page': '1',
-    'price_change_percentage': '1d'
-  });
-  var response = await http.get(url, headers: {
-    // 'X-CMC_PRO_API_KEY': '28aa3727-f27e-431d-8446-725e2b0e44c1',
-    "Accept": "application/json",
-  });
-  var jsonResponse = convert.jsonDecode(response.body); // expected bug
-  return jsonResponse;
-}
-
-
-/* https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=true&price_change_percentage=7d */

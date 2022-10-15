@@ -12,7 +12,7 @@
 
 5. Coinbase App (built with Crypto coins API)
 
-6. Netfilx Clone UI (building...)
+6. Netfilx Clone UI
 
 ## Apps UI shots
 
@@ -35,3 +35,7 @@
 - Coinbase App
 
 ![ChatUI](/shots/coinbase.png 'Coinbase Home Page')
+
+- Netfelix Clone
+
+![Netflix](/shots/Netflix.png 'Netfilx Home Page')
