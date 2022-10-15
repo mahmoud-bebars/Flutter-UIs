@@ -22,7 +22,7 @@
 
 - Clubhouse App
 
-![ClubHouse](/shots/ClubHouse.png 'Clubhouse Home Page')
+![ClubHouse](/shots/clubHouse.png 'Clubhouse Home Page')
 
 - Chat UI App
 
