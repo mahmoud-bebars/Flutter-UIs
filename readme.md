@@ -36,6 +36,6 @@
 
 ![ChatUI](/shots/coinbase.png 'Coinbase Home Page')
 
-- Netfelix Clone
+- Netfelix App
 
 ![Netflix](/shots/Netflix.png 'Netfilx Home Page')
